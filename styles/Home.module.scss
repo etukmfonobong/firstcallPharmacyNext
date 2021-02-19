@@ -1,0 +1,68 @@
+//
+//hero styles
+//
+.heroWrapper {
+  @screen fhd {
+    @apply py-80
+  }
+  @apply relative w-full h-80 bg-hero-pattern bg-cover px-20 py-56
+}
+
+.heroImage {
+  @apply absolute inset-0 object-cover object-top
+}
+
+.gradient {
+  @apply absolute inset-0 bg-gradient-to-r from-white to-transparent
+}
+
+.headlineWrapper {
+  @apply flex flex-col justify-center h-full max-w-sm
+}
+
+.headlineHeader {
+  @screen md {
+    @apply text-6xl
+  }
+  @apply text-4.5xl font-bold text-gray-700 leading-tight z-10
+}
+
+.headlineSubHeader {
+  @apply font-bold text-gray-500 opacity-80 text-lg mt-5 z-10
+}
+
+//
+//about us styles
+//
+.aboutUsSectionWrapper {
+  @screen lg {
+    @apply grid-cols-2
+  }
+  @apply grid grid-cols-1 grid gap-1 bg-red-200 font-poppins
+}
+
+.aboutUsImage {
+  @apply object-contain
+}
+
+.aboutUsHeadlineWrapper {
+  @screen lg {
+    @apply col-start-2 col-end-2
+  }
+  @apply flex flex-col justify-center h-full row-start-1 row-end-1 py-24 px-20 max-w-3xl
+}
+
+.aboutUsHeadlineSubHeader {
+  @apply font-bold text-gray-500 opacity-80 text-base mt-3 z-10 uppercase
+}
+
+.aboutUsHeadlineHeader {
+  @screen md {
+    @apply text-4.5xl
+  }
+  @apply text-4xl font-bold  text-gray-700 leading-tight mt-5 z-10
+}
+
+.aboutUsHeadlineBody {
+  @apply font-normal text-gray-500 opacity-80 mt-10 leading-normal z-10
+}
