@@ -6,3 +6,7 @@
 .pageStyle {
     @apply font-poppins
 }
+
+.svgStyle {
+    @apply mt-10 fill-current text-red-400
+}

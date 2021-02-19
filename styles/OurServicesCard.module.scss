@@ -1,0 +1,25 @@
+.cardWrapper {
+  @screen xl {
+    @apply max-w-xl
+  }
+  @screen md {
+    @apply max-w-sm
+  }
+  @apply h-100 w-full mx-5 bg-white shadow-lg flex flex-col items-center justify-center px-11 py-5
+}
+
+.cardHeader {
+  @apply text-2xl mt-10 font-bold text-center text-gray-700 leading-tight mt-5 z-10
+}
+
+.cardBody {
+  @apply text-center font-semibold text-sm text-gray-500 opacity-80 mt-7 leading-relaxed z-10 max-w-3xl
+}
+
+.cardButton {
+  @apply font-bold text-center border-red-400 text-red-300 mt-5 text-sm uppercase border w-full py-3
+}
+
+.svgStyle {
+  @apply fill-current h-20 w-20 text-red-400
+}

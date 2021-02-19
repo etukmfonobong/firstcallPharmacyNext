@@ -36,33 +36,102 @@
 //
 .aboutUsSectionWrapper {
   @screen lg {
-    @apply grid-cols-2
+    @apply grid-cols-2 gap-1
   }
-  @apply grid grid-cols-1 grid gap-1 bg-red-200 font-poppins
+  @apply grid grid-cols-1 place-items-center bg-red-200
+}
+
+.aboutUsImageWrapper {
+  @screen lg {
+    @apply block
+  }
+  @apply grid h-full w-full relative place-items-center mt-5 hidden
 }
 
 .aboutUsImage {
-  @apply object-contain
+  @apply object-contain object-center
 }
 
 .aboutUsHeadlineWrapper {
   @screen lg {
-    @apply col-start-2 col-end-2
+    @apply col-start-2 col-end-2 mr-auto
+  }
+  @screen fhd {
+    @apply col-start-2 col-end-2 max-w-5xl mr-auto
   }
   @apply flex flex-col justify-center h-full row-start-1 row-end-1 py-24 px-20 max-w-3xl
 }
 
 .aboutUsHeadlineSubHeader {
-  @apply font-bold text-gray-500 opacity-80 text-base mt-3 z-10 uppercase
+  @apply font-bold text-gray-500 opacity-80 text-base mt-3 z-10 uppercase fhd:text-2xl
 }
 
 .aboutUsHeadlineHeader {
   @screen md {
     @apply text-4.5xl
   }
+  @screen fhd {
+    @apply text-6xl leading-tight
+  }
   @apply text-4xl font-bold  text-gray-700 leading-tight mt-5 z-10
 }
 
 .aboutUsHeadlineBody {
-  @apply font-normal text-gray-500 opacity-80 mt-10 leading-normal z-10
+  @apply font-normal text-gray-500 opacity-80 mt-10 leading-normal z-10 fhd:text-2xl
+}
+
+//
+//our services styles
+//
+.ourServicesSectionWrapper {
+  @apply bg-gray-50 font-poppins
+}
+
+.ourServicesHeadlineWrapper {
+  @apply flex flex-col justify-center items-center p-10
+}
+
+.ourServicesHeadlineHeader {
+  @apply text-4xl font-bold text-center text-gray-700 leading-tight mt-5 z-10
+}
+
+.ourServicesHeadlineSubHeader {
+  @apply font-bold text-gray-500 opacity-80 text-base mt-3 z-10 uppercase
+}
+
+.ourServicesHeadlineBody {
+  @apply text-center font-semibold text-base text-gray-500 opacity-80 mt-7 leading-relaxed z-10 max-w-3xl
+}
+
+.ourServicesGridWrapper {
+  @screen fhd {
+    @apply grid-cols-3 py-12 px-96 mx-60
+  }
+  @screen xl {
+    @apply grid-cols-3 py-12 px-48
+  }
+  @apply py-12 px-20 mx-auto grid gap-10 grid-cols-1 justify-items-center
+}
+
+.ourServicesCta {
+  @apply mx-auto text-center mx-auto font-semibold pt-7 pb-7 px-7 text-sm text-gray-500 opacity-80  leading-relaxed max-w-3xl
+}
+
+//
+//meet our team
+//
+.meetOurTeamGrid {
+  @screen sm {
+    @apply grid-cols-2
+  }
+  @screen md {
+    @apply grid-cols-3
+  }
+  @screen lg {
+    @apply grid-cols-6
+  }
+  @screen fhd {
+    @apply grid-cols-6 px-40
+  }
+  @apply w-5/6 mx-auto my-10 grid grid-cols-2 gap-2
 }
