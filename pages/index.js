@@ -50,7 +50,9 @@ export default function Home({}) {
                 description={
                     'Firstcall Pharmacy is the clinical health science that links medical science with chemistry and it is charged with the discovery, production, disposal, safe and effective use, and control of medications and drugs. The practice of pharmacy requires excellent knowledge of drugs, their mechanism of action, side effects, interactions, mobility and toxicity. At the same time, it requires knowledge of treatment and understanding of the pathological process. Some specialties of pharmacists, such as that of clinical pharmacists, require other skills, e.g. knowledge about the acquisition and evaluation of physical and laboratory data.'
                 }
-                image={seoImage}
+                image={
+                    'https://firstcall-pharmacy-next.vercel.app/seo-image-large.png'
+                }
             />
 
             {/*hero section start*/}
