@@ -19,7 +19,8 @@ module.exports = {
             }),
             colors: {
                 'deep-blue': '#3b49df',
-                'dark-teal': '#3C8080'
+                'dark-teal': '#3C8080',
+                'dull-blue': '#223645'
             },
             height: {
                 100: '30rem',
@@ -31,11 +32,17 @@ module.exports = {
             },
             borderWidth: {
                 10: '10px'
+            },
+            gridTemplateRows: {
+                // header-body type grid
+                'with-header': '25% auto'
             }
         }
     },
     variants: {
-        extend: {}
+        extend: {
+            borderWidth: ['hover', 'focus']
+        }
     },
     plugins: []
 };

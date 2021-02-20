@@ -4,7 +4,7 @@
 
 /*custom*/
 .pageStyle {
-    @apply font-poppins
+    @apply font-poppins w-screen h-full
 }
 
 .svgStyle {

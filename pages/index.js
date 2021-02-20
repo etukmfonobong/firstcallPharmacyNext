@@ -1,8 +1,8 @@
 import style from '@/styles/Home.module.scss';
 import Image from 'next/image';
+import Link from 'next/link';
 import OurServicesCard from '@/components/OurServicesCard';
 import drugsIcon from '@/public/assets/icons/drug.svg';
-import drugSVG from '@/components/drugSVG';
 import heartIcon from '@/public/assets/icons/hand-and-heart.svg';
 import microscopeIcon from '@/public/assets/icons/microscope.svg';
 import person1 from '@/public/assets/images/persons/person-1.jpg';
@@ -12,6 +12,7 @@ import person4 from '@/public/assets/images/persons/person-4.jpg';
 import person5 from '@/public/assets/images/persons/person-5.jpg';
 import person6 from '@/public/assets/images/persons/person-6.jpg';
 import person7 from '@/public/assets/images/persons/person-7.jpg';
+import Footer from '@/components/Footer';
 
 export default function Home({}) {
     const services = [
@@ -43,13 +44,6 @@ export default function Home({}) {
         <main className="pageStyle">
             {/*hero section start*/}
             <section className={style.heroWrapper}>
-                {/*background image*/}
-                {/*<Image*/}
-                {/*    className={style.heroImage}*/}
-                {/*    src="/assets/images/hero-pattern.jpg"*/}
-                {/*    alt="background image"*/}
-                {/*    layout={'fill'}*/}
-                {/*/>*/}
                 {/*gradient overlay*/}
                 <div className={style.gradient} />
                 {/*h2 and paragraph*/}
@@ -131,7 +125,7 @@ export default function Home({}) {
                 {/*our services call to action*/}
                 <p className={style.ourServicesCta}>
                     Don’t hesitate, contact us for better help and services.{' '}
-                    <span className="text-red-400 underline">
+                    <span className="text-red-400 underline cursor-pointer">
                         Explore all services
                     </span>
                 </p>
@@ -168,6 +162,7 @@ export default function Home({}) {
                     ))}
                 </div>
             </div>
+            {/*meet our team footer*/}
             <div className="p-5 bg-pink-600">
                 <p className="text-center text-white mx-auto font-semibold text-sm opacity-80 leading-relaxed max-w-3xl">
                     We’re here for you. Call us at 1-877-632-6789 or
@@ -229,11 +224,14 @@ export default function Home({}) {
                     Believe. Consolation. Reality.
                 </h2>
                 {/*button*/}
-                <div className="font-bold text-center bg-white text-dark-teal mt-7 text-gray-500 text-sm z-10 px-5 py-3">
-                    Find A Caregiver
+                <div className="font-bold text-center bg-white hover:bg-red-500 text-dark-teal hover:text-white mt-7 text-gray-500 text-sm z-10 px-5 py-3 cursor-pointer hover:shadow">
+                    <Link href={'/'}>Find A Caregiver</Link>
                 </div>
             </div>
             {/*cta section end*/}
+
+            {/*footer*/}
+            <Footer />
         </main>
     );
 }

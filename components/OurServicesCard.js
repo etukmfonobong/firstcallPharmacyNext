@@ -6,12 +6,7 @@ export default function OurServicesCard({ header, subHeader, icon }) {
         // card wrapper
         <div className={style.cardWrapper}>
             {/*card svg icon*/}
-            <Image
-                className={style.svgStyle}
-                src={icon}
-                width={'60'}
-                height={'60'}
-            />
+            <Image src={icon} width={'80'} height={'80'} />
 
             {/*card header*/}
             <h2 className={style.cardHeader}>{header}</h2>
