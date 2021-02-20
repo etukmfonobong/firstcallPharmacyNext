@@ -4,7 +4,7 @@ export default function MetaTags({ title, description, image }) {
     return (
         <Head>
             <title>{title}</title>
-            <meta name="twitter:card" content="summary" />
+            <meta name="twitter:card" content="summary_large_image" />
             <meta name="twitter:site" content="@firstcall_pharmacy" />
             <meta name="twitter:title" content={title} />
             <meta name="twitter:description" content={description} />
