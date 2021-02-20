@@ -5,11 +5,11 @@
   @screen fhd {
     @apply py-80
   }
-  @apply relative w-full h-80 bg-hero-pattern bg-cover px-20 py-56
+  @apply relative w-full bg-hero-pattern bg-cover bg-right-top px-10 py-24 md:px-20 md:py-56
 }
 
 .heroImage {
-  @apply absolute inset-0 object-cover object-top
+  @apply absolute inset-0 object-cover object-left-top
 }
 
 .gradient {
@@ -59,7 +59,7 @@
   @screen fhd {
     @apply col-start-2 col-end-2 max-w-5xl mr-auto
   }
-  @apply flex flex-col justify-center h-full row-start-1 row-end-1 py-24 px-20 max-w-3xl
+  @apply flex flex-col justify-center h-full row-start-1 row-end-1 py-24 px-16 max-w-3xl
 }
 
 .aboutUsHeadlineSubHeader {
@@ -110,7 +110,7 @@
   @screen xl {
     @apply grid-cols-3 py-12 px-48
   }
-  @apply py-12 px-20 mx-auto grid gap-10 grid-cols-1 justify-items-center
+  @apply py-12 px-10 mx-auto grid gap-10 grid-cols-1 justify-items-center
 }
 
 .ourServicesCta {

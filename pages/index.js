@@ -44,12 +44,12 @@ export default function Home({}) {
             {/*hero section start*/}
             <section className={style.heroWrapper}>
                 {/*background image*/}
-                <Image
-                    className={style.heroImage}
-                    src="/assets/images/hero-pattern.jpg"
-                    alt="background image"
-                    layout={'fill'}
-                />
+                {/*<Image*/}
+                {/*    className={style.heroImage}*/}
+                {/*    src="/assets/images/hero-pattern.jpg"*/}
+                {/*    alt="background image"*/}
+                {/*    layout={'fill'}*/}
+                {/*/>*/}
                 {/*gradient overlay*/}
                 <div className={style.gradient} />
                 {/*h2 and paragraph*/}
@@ -154,11 +154,15 @@ export default function Home({}) {
                 <div className={style.meetOurTeamGrid}>
                     {/*employee pictures*/}
                     {persons.map((person) => (
-                        <div className="h-52 w-full bg-red-200" key={person}>
-                            <img
+                        <div
+                            className="h-52 w-full relative bg-red-200"
+                            key={person}
+                        >
+                            <Image
                                 alt="profile"
                                 className="w-full h-full object-cover object-center"
                                 src={person}
+                                layout={'fill'}
                             />
                         </div>
                     ))}
@@ -175,7 +179,7 @@ export default function Home({}) {
             {/*meet our team end*/}
 
             {/*simple process start*/}
-            <div className="flex flex-col justify-center items-center py-14 bg-white">
+            <div className="flex flex-col justify-center items-center py-14 px-5 bg-white">
                 <p className="font-bold text-white opacity-80 text-gray-500 mt-3 z-10 uppercase">
                     SIMPLE PROCESS
                 </p>
@@ -213,15 +217,15 @@ export default function Home({}) {
             {/*simple process end*/}
 
             {/*cta section start*/}
-            <div className="relative px-20 py-44 bg-banner-bg bg-cover bg-left-top flex flex-col items-center justify-center">
+            <div className="relative md:px-20 px-5 py-44 bg-banner-bg bg-cover bg-center flex flex-col items-center justify-center">
                 {/*gradient*/}
                 <div className="absolute inset-0 bg-gradient-to-r from-dark-teal to-dark-teal opacity-50" />
                 {/*sub header*/}
-                <p className="text-center font-semibold text-base text-white leading-leading-relaxed z-10 max-w-3xl">
+                <p className="text-center font-semibold text-lg text-white leading-leading-relaxed z-10 max-w-3xl">
                     Stay healthy and strong to enjoy life
                 </p>
                 {/*header*/}
-                <h2 className="text-5xl font-bold text-center  text-white leading-tight mt-5 z-10">
+                <h2 className="md:text-5xl text-4xl font-bold text-center  text-white leading-tight mt-5 z-10">
                     Believe. Consolation. Reality.
                 </h2>
                 {/*button*/}
