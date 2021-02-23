@@ -1,0 +1,23 @@
+/* CSSTransition classes  */
+$speed: 500ms
+
+.slideInEnter
+        transform: translateX(-110%)
+        opacity: 0
+
+.slideInEnterActive
+        transform: translateX(0%)
+        transition: all $speed ease
+        opacity: 1
+
+.slideInExit
+        position: absolute
+        opacity: 1
+
+.slideInExitActive
+        transform: translateX(-110%)
+        transition: all $speed ease
+        opacity: 0
+
+.navLink
+        @apply text-white font-bold text-3xl md:text-4xl mb-10 md:mb-12 hover:opacity-70

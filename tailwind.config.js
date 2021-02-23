@@ -1,8 +1,5 @@
 module.exports = {
-    purge: [
-        './pages/**/*.{js,ts,jsx,tsx}',
-        './components/**/*.{js,ts,jsx,tsx}'
-    ],
+    purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
     darkMode: false, // or 'media' or 'class'
     theme: {
         fontFamily: {
@@ -36,13 +33,17 @@ module.exports = {
             gridTemplateRows: {
                 // header-body type grid
                 'with-header': '25% auto'
+            },
+            gridTemplateColumns: {
+                'nav-bar': '1fr 3fr 1.5fr'
             }
         }
     },
     variants: {
         extend: {
-            borderWidth: ['hover', 'focus']
+            borderWidth: ['hover', 'focus'],
+            opacity: ['active', 'hover', 'focus']
         }
     },
     plugins: []
-};
+}

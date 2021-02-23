@@ -1,5 +1,5 @@
-import Link from 'next/link';
-import style from '@/styles/Footer.module.scss';
+import Link from 'next/link'
+import style from '@/styles/Footer.module.scss'
 
 export default function Footer({}) {
     return (
@@ -82,6 +82,7 @@ export default function Footer({}) {
                     <h2 className={'text-base font-semibold uppercase'}>
                         follow us
                     </h2>
+
                     {/*social links grid*/}
                     <div className={'grid grid-cols-4 gap-1 relative'}>
                         {/*twitter*/}
@@ -160,5 +161,5 @@ export default function Footer({}) {
                 <p className={'text-xs'}>© 2021 Firstcall Pharmacy</p>
             </div>
         </footer>
-    );
+    )
 }

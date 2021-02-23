@@ -1,20 +1,22 @@
-import style from '@/styles/Home.module.scss';
-import Image from 'next/image';
-import Link from 'next/link';
-import OurServicesCard from '@/components/OurServicesCard';
-import drugsIcon from '@/public/assets/icons/drug.svg';
-import heartIcon from '@/public/assets/icons/hand-and-heart.svg';
-import microscopeIcon from '@/public/assets/icons/microscope.svg';
-import person1 from '@/public/assets/images/persons/person-1.jpg';
-import person2 from '@/public/assets/images/persons/person-2.jpg';
-import person3 from '@/public/assets/images/persons/person-3.jpg';
-import person4 from '@/public/assets/images/persons/person-4.jpg';
-import person5 from '@/public/assets/images/persons/person-5.jpg';
-import person6 from '@/public/assets/images/persons/person-6.jpg';
-import person7 from '@/public/assets/images/persons/person-7.jpg';
-import seoImage from '@/public/seo-image-large.png';
-import Footer from '@/components/Footer';
-import MetaTags from '@/components/MetaTags';
+import style from '@/styles/Home.module.scss'
+import Image from 'next/image'
+import Link from 'next/link'
+import OurServicesCard from '@/components/OurServicesCard'
+import drugsIcon from '@/public/assets/icons/drug.svg'
+import heartIcon from '@/public/assets/icons/hand-and-heart.svg'
+import microscopeIcon from '@/public/assets/icons/microscope.svg'
+import person1 from '@/public/assets/images/persons/person-1.jpg'
+import person2 from '@/public/assets/images/persons/person-2.jpg'
+import person4 from '@/public/assets/images/persons/person-4.jpg'
+import person5 from '@/public/assets/images/persons/person-5.jpg'
+import person6 from '@/public/assets/images/persons/person-6.jpg'
+import person7 from '@/public/assets/images/persons/person-7.jpg'
+import process1 from '@/public/assets/images/process1.jpg'
+import process2 from '@/public/assets/images/process2.jpg'
+import process3 from '@/public/assets/images/process3.jpg'
+import process4 from '@/public/assets/images/process4.jpg'
+import Footer from '@/components/Footer'
+import MetaTags from '@/components/MetaTags'
 
 export default function Home({}) {
     const services = [
@@ -36,11 +38,11 @@ export default function Home({}) {
             body:
                 'Physical, mental, occupational therapy provides patients with help on relearning how to …'
         }
-    ];
+    ]
 
-    const persons = [person1, person2, person4, person5, person6, person7];
+    const persons = [person1, person2, person4, person5, person6, person7]
 
-    const process = [person3, person3, person3, person3];
+    const processes = [process1, process2, process3, process4]
 
     return (
         <main className="pageStyle">
@@ -125,9 +127,9 @@ export default function Home({}) {
                 <div className={style.ourServicesGridWrapper}>
                     {/*cards*/}
                     {services &&
-                        services.map((service) => (
+                        services.map((service, index) => (
                             <OurServicesCard
-                                key={service}
+                                key={index}
                                 icon={service.icon}
                                 header={service.title}
                                 subHeader={service.body}
@@ -160,10 +162,10 @@ export default function Home({}) {
                 </p>
                 <div className={style.meetOurTeamGrid}>
                     {/*employee pictures*/}
-                    {persons.map((person) => (
+                    {persons.map((person, index) => (
                         <div
                             className="h-52 w-full relative bg-red-200"
-                            key={person}
+                            key={index}
                         >
                             <Image
                                 alt="profile"
@@ -201,14 +203,14 @@ export default function Home({}) {
                 </p>
                 {/*process grid*/}
                 <div className="w-5/6 mx-auto my-10 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-2 bg-line-bg bg-contain bg-no-repeat bg-top">
-                    {process.map((p) => (
+                    {processes.map((process, index) => (
                         <div
                             className="py-5 px-12 w-full flex flex-col items-center justify-center"
-                            key={p}
+                            key={index}
                         >
                             <img
                                 className="w-44 h-44 object-cover object-top shadow-2xl rounded-full"
-                                src={p}
+                                src={process}
                                 alt={'process'}
                             />
                             <h2 className="text-2xl mt-10 font-bold text-center text-gray-700 leading-tight mt-5 z-10">
@@ -246,5 +248,5 @@ export default function Home({}) {
             {/*footer*/}
             <Footer />
         </main>
-    );
+    )
 }
