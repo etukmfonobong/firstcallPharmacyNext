@@ -4,9 +4,9 @@
 
 /*custom*/
 .pageStyle {
-    @apply font-poppins w-screen h-full
+  @apply h-full font-poppins;
 }
 
 .svgStyle {
-    @apply mt-10 fill-current text-red-400
+  @apply mt-10 text-red-400 fill-current;
 }

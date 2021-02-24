@@ -1,133 +1,114 @@
 /* hero styles */
 .heroWrapper {
-    @screen fhd {
-        @apply py-80;
-    }
-    @apply relative w-full bg-hero-pattern bg-cover bg-right-top px-10 py-36 md:px-20 md:py-56;
+  @screen fhd {
+    @apply py-80;
+  }
+  @apply relative py-36 px-10 w-full bg-right-top bg-cover bg-hero-pattern md:px-20 md:py-56;
 }
 
 .heroImage {
-    @apply absolute inset-0 object-cover object-left-top;
+  @apply object-cover object-left-top absolute inset-0;
 }
 
 .gradient {
-    @apply absolute inset-0 bg-gradient-to-r from-white to-transparent;
+  @apply absolute inset-0 bg-gradient-to-r from-white via-transparent to-transparent;
 }
 
 .headlineWrapper {
-    @apply flex flex-col justify-center h-full max-w-sm;
+  @apply flex flex-col justify-center max-w-sm h-full;
 }
 
 .headlineHeader {
-    @screen md {
-        @apply text-7xl;
-    }
-    @apply text-4.5xl font-bold text-gray-700 leading-tight z-10;
+  @screen md {
+    @apply text-7xl;
+  }
+  @apply text-4.5xl font-bold text-gray-800 leading-tight z-10;
 }
 
 .headlineSubHeader {
-    @apply font-bold text-gray-500 opacity-80 text-lg mt-5 z-10;
+  @apply z-10 mt-5 text-lg font-bold text-gray-700 opacity-80;
 }
 
 /* about us styles */
 .aboutUsSectionWrapper {
-    @screen lg {
-        @apply grid-cols-2 gap-1;
-    }
-    @apply grid grid-cols-1 place-items-center bg-red-200;
+  @screen lg {
+    @apply grid-cols-2 gap-1;
+  }
+  @apply grid grid-cols-1 place-items-center bg-red-200;
 }
 
 .aboutUsImageWrapper {
-    @screen lg {
-        @apply block;
-    }
-    @apply grid h-full w-full relative place-items-center mt-5 hidden;
+  @screen lg {
+    @apply block;
+  }
+  @apply grid hidden relative place-items-center mt-5 w-full h-full;
 }
 
 .aboutUsImage {
-    @apply object-contain object-center;
+  @apply object-contain object-center;
 }
 
 .aboutUsHeadlineWrapper {
-    @screen lg {
-        @apply col-start-2 col-end-2 mr-auto;
-    }
-    @screen fhd {
-        @apply col-start-2 col-end-2 max-w-5xl mr-auto;
-    }
-    @apply flex flex-col justify-center h-full row-start-1 row-end-1 py-24 px-16 max-w-3xl;
+  @screen lg {
+    @apply col-start-2 col-end-2 mr-auto;
+  }
+  @screen fhd {
+    @apply col-start-2 col-end-2 mr-auto max-w-5xl;
+  }
+  @apply flex flex-col row-start-1 row-end-1 justify-center py-24 px-16 max-w-3xl h-full;
 }
 
 .aboutUsHeadlineSubHeader {
-    @apply font-bold text-gray-500 opacity-80 text-base mt-3 z-10 uppercase fhd:text-2xl;
+  @apply z-10 mt-3 text-base font-bold text-gray-500 uppercase opacity-80 fhd:text-2xl;
 }
 
 .aboutUsHeadlineHeader {
-    @screen md {
-        @apply text-4.5xl;
-    }
-    @screen fhd {
-        @apply text-6xl leading-tight;
-    }
-    @apply text-4xl font-bold  text-gray-700 leading-tight mt-5 z-10;
+  @screen md {
+    @apply text-4.5xl;
+  }
+  @screen fhd {
+    @apply text-6xl leading-tight;
+  }
+  @apply z-10 mt-5 text-4xl font-bold leading-tight text-gray-700;
 }
 
 .aboutUsHeadlineBody {
-    @apply font-normal text-gray-500 opacity-80 mt-10 leading-normal z-10 fhd:text-2xl;
+  @apply z-10 mt-10 font-normal leading-normal text-gray-500 opacity-80 fhd:text-2xl;
 }
 
 //
 //our services styles
 //
 .ourServicesSectionWrapper {
-    @apply bg-gray-50 font-poppins;
+  @apply bg-gray-50 font-poppins;
 }
 
 .ourServicesHeadlineWrapper {
-    @apply flex flex-col justify-center items-center p-10;
+  @apply flex flex-col justify-center items-center p-10;
 }
 
 .ourServicesHeadlineHeader {
-    @apply text-4xl font-bold text-center text-gray-700 leading-tight mt-5 z-10;
+  @apply z-10 mt-5 text-4xl font-bold leading-tight text-center text-gray-700;
 }
 
 .ourServicesHeadlineSubHeader {
-    @apply font-bold text-gray-500 opacity-80 text-base mt-3 z-10 uppercase;
+  @apply z-10 mt-3 text-base font-bold text-gray-500 uppercase opacity-80;
 }
 
 .ourServicesHeadlineBody {
-    @apply text-center font-semibold text-base text-gray-500 opacity-80 mt-7 leading-relaxed z-10 max-w-3xl;
+  @apply z-10 mt-7 max-w-3xl text-base font-semibold leading-relaxed text-center text-gray-500 opacity-80;
 }
 
 .ourServicesGridWrapper {
-    @screen fhd {
-        @apply grid-cols-3 py-12 px-96 mx-60;
-    }
-    @screen xl {
-        @apply grid-cols-3 py-12 px-48;
-    }
-    @apply py-12 px-10 mx-auto grid gap-10 grid-cols-1 justify-items-center;
+  @screen fhd {
+    @apply grid-cols-3 py-12 px-96 mx-60;
+  }
+  @screen xl {
+    @apply grid-cols-3 py-12 px-48;
+  }
+  @apply grid grid-cols-1 gap-10 justify-items-center py-12 px-10 mx-auto;
 }
 
 .ourServicesCta {
-    @apply mx-auto text-center font-semibold pt-7 pb-7 px-7 text-sm text-gray-500 opacity-80  leading-relaxed max-w-3xl;
-}
-
-//
-//meet our team
-//
-.meetOurTeamGrid {
-    @screen sm {
-        @apply grid-cols-2;
-    }
-    @screen md {
-        @apply grid-cols-3;
-    }
-    @screen lg {
-        @apply grid-cols-6;
-    }
-    @screen fhd {
-        @apply grid-cols-6 px-40;
-    }
-    @apply w-5/6 mx-auto my-10 grid grid-cols-2 gap-2;
+  @apply px-7 pt-7 pb-7 mx-auto max-w-3xl text-sm font-semibold leading-relaxed text-center text-gray-500 opacity-80;
 }
