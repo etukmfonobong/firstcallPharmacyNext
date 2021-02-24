@@ -23,20 +23,17 @@ export default function Home({}) {
         {
             icon: drugsIcon,
             title: 'Daily Home Care',
-            body:
-                'We send a doctor to visit the patient at home to diagnose and treat the illnesses. He or …'
+            body: 'We send a doctor to visit the patient at home to diagnose and treat the illnesses. He or …'
         },
         {
             icon: heartIcon,
             title: 'Hourly Home Care',
-            body:
-                'The most common form of home health care, which depends on the individual needs. Through …'
+            body: 'The most common form of home health care, which depends on the individual needs. Through …'
         },
         {
             icon: microscopeIcon,
             title: 'Specialized Care',
-            body:
-                'Physical, mental, occupational therapy provides patients with help on relearning how to …'
+            body: 'Physical, mental, occupational therapy provides patients with help on relearning how to …'
         }
     ]
 
@@ -52,9 +49,7 @@ export default function Home({}) {
                 description={
                     'Firstcall Pharmacy is the clinical health science that links medical science with chemistry and it is charged with the discovery, production, disposal, safe and effective use, and control of medications and drugs. The practice of pharmacy requires excellent knowledge of drugs, their mechanism of action, side effects, interactions, mobility and toxicity. At the same time, it requires knowledge of treatment and understanding of the pathological process. Some specialties of pharmacists, such as that of clinical pharmacists, require other skills, e.g. knowledge about the acquisition and evaluation of physical and laboratory data.'
                 }
-                image={
-                    'https://firstcall-pharmacy-next.vercel.app/seo-image-large.png'
-                }
+                image={'https://firstcall-pharmacy-next.vercel.app/seo-image-large.png'}
             />
 
             {/*hero section start*/}
@@ -64,9 +59,7 @@ export default function Home({}) {
                 {/*h2 and paragraph*/}
                 <div className={style.headlineWrapper}>
                     <h2 className={style.headlineHeader}>Dedicated Medicare</h2>
-                    <p className={style.headlineSubHeader}>
-                        Because your health matters most
-                    </p>
+                    <p className={style.headlineSubHeader}>Because your health matters most</p>
                 </div>
             </section>
             {/*hero section end*/}
@@ -75,12 +68,7 @@ export default function Home({}) {
             <section className={style.aboutUsSectionWrapper}>
                 {/*about us image||left grid*/}
                 <div className={style.aboutUsImageWrapper}>
-                    <Image
-                        className={style.aboutUsImage}
-                        src={'/assets/images/about-us-bg.png'}
-                        alt="our dedication image"
-                        layout={'fill'}
-                    />
+                    <Image className={style.aboutUsImage} src={'/assets/images/about-us-bg.png'} alt="our dedication image" layout={'fill'} />
                 </div>
                 {/*about us headline||right grid*/}
                 {/*about us headline wrapper*/}
@@ -88,15 +76,11 @@ export default function Home({}) {
                     {/*about us sub header*/}
                     <h2 className={style.aboutUsHeadlineSubHeader}>About Us</h2>
                     {/*about us header*/}
-                    <h2 className={style.aboutUsHeadlineHeader}>
-                        We established cooperation with various global partners.
-                    </h2>
+                    <h2 className={style.aboutUsHeadlineHeader}>We established cooperation with various global partners.</h2>
                     {/*about us headline body*/}
                     <p className={style.aboutUsHeadlineBody}>
-                        We've combined a new kind of doctor's experience that
-                        blends the highest level of health care with exceptional
-                        service. People can enroll membership by paying only an
-                        annual membership fee of just $129.
+                        We've combined a new kind of doctor's experience that blends the highest level of health care with exceptional service. People can enroll membership by
+                        paying only an annual membership fee of just $129.
                     </p>
                 </div>
             </section>
@@ -107,18 +91,12 @@ export default function Home({}) {
                 {/*our services headline wrapper*/}
                 <div className={style.ourServicesHeadlineWrapper}>
                     {/*our services headline sub heading*/}
-                    <p className={style.ourServicesHeadlineSubHeader}>
-                        Our Services
-                    </p>
+                    <p className={style.ourServicesHeadlineSubHeader}>Our Services</p>
                     {/*our services headline heading*/}
-                    <h2 className={style.ourServicesHeadlineHeader}>
-                        Managed healthcare services
-                    </h2>
+                    <h2 className={style.ourServicesHeadlineHeader}>Managed healthcare services</h2>
                     {/*our services headline body*/}
                     <p className={style.ourServicesHeadlineBody}>
-                        Upon request, HealSoul Health Services staff will
-                        provide instructions for individuals whose medical
-                        conditions need special attention and additional
+                        Upon request, HealSoul Health Services staff will provide instructions for individuals whose medical conditions need special attention and additional
                         certificates.
                     </p>
                 </div>
@@ -126,53 +104,28 @@ export default function Home({}) {
                 {/*our services grid*/}
                 <div className={style.ourServicesGridWrapper}>
                     {/*cards*/}
-                    {services &&
-                        services.map((service, index) => (
-                            <OurServicesCard
-                                key={index}
-                                icon={service.icon}
-                                header={service.title}
-                                subHeader={service.body}
-                            />
-                        ))}
+                    {services && services.map((service, index) => <OurServicesCard key={index} icon={service.icon} header={service.title} subHeader={service.body} />)}
                 </div>
 
                 {/*our services call to action*/}
                 <p className={style.ourServicesCta}>
-                    Don’t hesitate, contact us for better help and services.{' '}
-                    <span className="text-red-400 underline cursor-pointer">
-                        Explore all services
-                    </span>
+                    Don’t hesitate, contact us for better help and services. <span className="text-red-400 underline cursor-pointer">Explore all services</span>
                 </p>
             </div>
             {/*our services section end*/}
 
             {/*meet our team start*/}
             <div className="flex flex-col justify-center items-center py-14 px-5 bg-gray-700">
-                <p className="font-bold text-white opacity-80 text-gray-400 mt-3 z-10 uppercase">
-                    MEET OUR TEAM
-                </p>
-                <h2 className="text-4xl font-bold text-center  text-white leading-tight mt-5 z-10">
-                    A professional & friendly care provider
-                </h2>
+                <p className="font-bold text-white opacity-80 text-gray-400 mt-3 z-10 uppercase">MEET OUR TEAM</p>
+                <h2 className="text-4xl font-bold text-center  text-white leading-tight mt-5 z-10">A professional & friendly care provider</h2>
                 <p className="text-center font-semibold text-base text-gray-400 opacity-80 mt-7 leading-leading-relaxed z-10 max-w-3xl">
-                    HealSoul Health Services provide patients with choices to
-                    ask for the conducting and analyzing of several lab tests
-                    on-site at no cost for prioritized patients.
+                    HealSoul Health Services provide patients with choices to ask for the conducting and analyzing of several lab tests on-site at no cost for prioritized patients.
                 </p>
                 <div className={style.meetOurTeamGrid}>
                     {/*employee pictures*/}
                     {persons.map((person, index) => (
-                        <div
-                            className="h-52 w-full relative bg-red-200"
-                            key={index}
-                        >
-                            <Image
-                                alt="profile"
-                                className="w-full h-full object-cover object-center"
-                                src={person}
-                                layout={'fill'}
-                            />
+                        <div className="h-52 w-full relative bg-red-200" key={index}>
+                            <Image alt="profile" className="w-full h-full object-cover object-center" src={person} layout={'fill'} />
                         </div>
                     ))}
                 </div>
@@ -181,44 +134,26 @@ export default function Home({}) {
             <div className="p-5 bg-pink-600">
                 <p className="text-center text-white mx-auto font-semibold text-sm opacity-80 leading-relaxed max-w-3xl">
                     We’re here for you. Call us at 1-877-632-6789 or
-                    <span className="underline">
-                        request an appointment online.
-                    </span>
+                    <span className="underline">request an appointment online.</span>
                 </p>
             </div>
             {/*meet our team end*/}
 
             {/*simple process start*/}
             <div className="flex flex-col justify-center items-center py-14 px-5 bg-white">
-                <p className="font-bold text-white opacity-80 text-gray-500 mt-3 z-10 uppercase">
-                    SIMPLE PROCESS
-                </p>
-                <h2 className="text-4xl font-bold text-center  text-gray-700 leading-tight mt-5 z-10">
-                    How it helps you stay strong
-                </h2>
+                <p className="font-bold text-white opacity-80 text-gray-500 mt-3 z-10 uppercase">SIMPLE PROCESS</p>
+                <h2 className="text-4xl font-bold text-center  text-gray-700 leading-tight mt-5 z-10">How it helps you stay strong</h2>
                 <p className="text-center font-semibold text-base text-gray-500 opacity-80 mt-7 leading-leading-relaxed z-10 max-w-3xl">
-                    We have freelance doctors and physicists who are available
-                    at all time to deliver on-demand diagnoses and other health
-                    related services.
+                    We have freelance doctors and physicists who are available at all time to deliver on-demand diagnoses and other health related services.
                 </p>
                 {/*process grid*/}
                 <div className="w-5/6 mx-auto my-10 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-2 bg-line-bg bg-contain bg-no-repeat bg-top">
                     {processes.map((process, index) => (
-                        <div
-                            className="py-5 px-12 w-full flex flex-col items-center justify-center"
-                            key={index}
-                        >
-                            <img
-                                className="w-44 h-44 object-cover object-top shadow-2xl rounded-full"
-                                src={process}
-                                alt={'process'}
-                            />
-                            <h2 className="text-2xl mt-10 font-bold text-center text-gray-700 leading-tight mt-5 z-10">
-                                Application
-                            </h2>
+                        <div className="py-5 px-12 flex flex-col items-center justify-center" key={index}>
+                            <Image className="rounded-full object-cover object-center shadow" src={process} alt={'process'} height={200} width={200} />
+                            <h2 className="text-2xl mt-10 font-bold text-center text-gray-700 leading-tight mt-5 z-10">Application</h2>
                             <p className="text-center font-semibold text-sm text-gray-500 opacity-80 mt-7 leading-relaxed z-10 max-w-3xl">
-                                Applicants can submit all health-related
-                                documents at our reception desk.
+                                Applicants can submit all health-related documents at our reception desk.
                             </p>
                         </div>
                     ))}
@@ -231,13 +166,9 @@ export default function Home({}) {
                 {/*gradient*/}
                 <div className="absolute inset-0 bg-gradient-to-r from-dark-teal to-dark-teal opacity-50" />
                 {/*sub header*/}
-                <p className="text-center font-semibold text-lg text-white leading-leading-relaxed z-10 max-w-3xl">
-                    Stay healthy and strong to enjoy life
-                </p>
+                <p className="text-center font-semibold text-lg text-white leading-leading-relaxed z-10 max-w-3xl">Stay healthy and strong to enjoy life</p>
                 {/*header*/}
-                <h2 className="md:text-5xl text-4xl font-bold text-center  text-white leading-tight mt-5 z-10">
-                    Believe. Consolation. Reality.
-                </h2>
+                <h2 className="md:text-5xl text-4xl font-bold text-center  text-white leading-tight mt-5 z-10">Believe. Consolation. Reality.</h2>
                 {/*button*/}
                 <div className="font-bold text-center bg-white hover:bg-red-500 text-dark-teal hover:text-white mt-7 text-gray-500 text-sm z-10 px-5 py-3 cursor-pointer hover:shadow">
                     <Link href={'/'}>Find A Caregiver</Link>

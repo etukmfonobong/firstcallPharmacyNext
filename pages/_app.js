@@ -11,7 +11,7 @@ function MyApp({ Component, pageProps }) {
         <NavContext.Provider value={navData}>
             <Navbar />
             <NavbarSlideIn />
-            <Component {...pageProps} />;
+            <Component {...pageProps} />
         </NavContext.Provider>
     )
 }
