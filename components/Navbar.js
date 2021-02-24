@@ -30,7 +30,7 @@ export default function Navbar({}) {
                 <Link href="/">
                     <a className={style.navLink}>Shop</a>
                 </Link>
-                <Link href="/">
+                <Link href="/about-us">
                     <a className={style.navLink}>About us</a>
                 </Link>
             </div>

@@ -15,7 +15,6 @@ import process1 from '@/public/assets/images/process1.jpg'
 import process2 from '@/public/assets/images/process2.jpg'
 import process3 from '@/public/assets/images/process3.jpg'
 import process4 from '@/public/assets/images/process4.jpg'
-import Footer from '@/components/Footer'
 import MetaTags from '@/components/MetaTags'
 
 export default function Home({}) {
@@ -175,9 +174,6 @@ export default function Home({}) {
                 </div>
             </div>
             {/*cta section end*/}
-
-            {/*footer*/}
-            <Footer />
         </main>
     )
 }

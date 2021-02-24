@@ -3,6 +3,7 @@ import NavbarSlideIn from '@/components/NavbarSlideIn'
 import '../styles/globals.css'
 import { NavContext } from '@/lib/context'
 import { useNavContext } from '@/lib/hooks'
+import Footer from '@/components/Footer'
 
 function MyApp({ Component, pageProps }) {
     const navData = useNavContext()
@@ -12,6 +13,7 @@ function MyApp({ Component, pageProps }) {
             <Navbar />
             <NavbarSlideIn />
             <Component {...pageProps} />
+            <Footer />
         </NavContext.Provider>
     )
 }
