@@ -3,7 +3,7 @@ import Link from "next/link"
 
 export default function Footer({}) {
 		return (
-				<footer className="py-10 px-14 text-white font-poppins lg:px-36 md:px-20 lg:py-20 md:py-14 bg-dull-blue">
+				<footer className="py-10 px-14 text-white font-poppins lg:px-24 md:px-20 lg:py-16 md:py-14 bg-dull-blue">
 						{/*main grid start*/}
 						<div className="grid grid-cols-1 gap-7 lg:grid-cols-4 md:grid-cols-2">
 								{/*firstcall*/}
@@ -43,7 +43,7 @@ export default function Footer({}) {
 
 										{/*links grid start*/}
 										<div className={"text-sm leading-normal grid gap-3 grid-flow-row auto-rows-max"}>
-												<Link href={"/"}>support@firstcallpharmacy.com</Link>
+												<Link href={"/"}>info@firstcallpharmacy.com</Link>
 												<Link href={"/"}>+234 903 0000 857</Link>
 												<Link href={"/"}>+234 802 2212 229</Link>
 												<Link href={"/"}>Ikosi Road, 8b Dipo Awolesi St, magodo Phase, Lagos</Link>

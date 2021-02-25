@@ -23,7 +23,7 @@ export default function Navbar({}) {
 								<Link href="/">
 										<a className={style.navLink}>Blog</a>
 								</Link>
-								<Link href="/">
+								<Link href="/f-a-q">
 										<a className={style.navLink}>F.A.Q</a>
 								</Link>
 								<Link href="/">

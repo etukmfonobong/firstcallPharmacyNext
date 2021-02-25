@@ -1,23 +1,38 @@
 import MeetOurTeam from "@/components/MeetOurTeam.js"
+import MetaTags from "@/components/MetaTags.js"
 import community1 from "@/public/assets/images/community/community1.png"
 import community2 from "@/public/assets/images/community/community2.png"
 import community3 from "@/public/assets/images/community/community3.png"
 import Image from "next/image"
+import CountUp from "react-countup"
 
 export default function AboutUs({}) {
 		const points = [
 				{
 						icon: community1,
-						num: "6500+",
+						num: 6500,
 						title: "Worldwide Branches",
 						text: "Bring best quality health services to ones who are in need worldwide."
 				},
-				{icon: community2, num: "1000+", title: "Hospital Formed", text: "Bring to the table win-win strategies to ensure proactive domination."},
-				{icon: community3, num: "300+", title: "Local Partners", text: "We established cooperation with plenty of globally famous partners."}
+				{icon: community2, num: 1000, title: "Hospital Formed", text: "Bring to the table win-win strategies to ensure proactive domination."},
+				{icon: community3, num: 300, title: "Local Partners", text: "We established cooperation with plenty of globally famous partners."}
 		]
 
 		return (
 				<main className="pageStyle">
+						{/*meta tags*/}
+						<MetaTags
+								title={"About us | Firstcall Pharmacy"}
+								description={
+										"Firstcall Pharmacy is the clinical health science that links medical science with chemistry and it is charged with the discovery, " +
+										"production, disposal, safe and effective use, and control of medications and drugs. " +
+										"The practice of pharmacy requires excellent knowledge of drugs, their mechanism of action, side effects, " +
+										"interactions, mobility and toxicity. At the same time, it requires knowledge of treatment and understanding of the pathological process. " +
+										"Some specialties of pharmacists, such as that of clinical pharmacists, require other skills, e.g. knowledge about the acquisition and " +
+										"evaluation of physical and laboratory data."
+								}
+								image={"https://firstcall-pharmacy-next.vercel.app/seo-image-large.png"}
+						/>
 
 						{/*about us header section start*/}
 						<div className="flex relative flex-col justify-center items-center py-56 px-5 bg-center bg-cover md:px-28 bg-about-hero">
@@ -40,7 +55,7 @@ export default function AboutUs({}) {
 												Building a healthy community for all.
 										</h2>
 										{/*sub header*/}
-										<p className="z-10 mt-5 max-w-3xl text-lg font-semibold leading-relaxed text-center text-gray-300">
+										<p className="z-10 mt-5 max-w-3xl text-lg font-semibold leading-relaxed text-center text-gray-500">
 												Our institute provides care for our region’s most precious resource: human. We care for the growing needs of our community.
 										</p>
 								</div>
@@ -55,7 +70,7 @@ export default function AboutUs({}) {
 														<div className="relative p-5 mb-10 w-full h-20">
 																<Image className="object-contain object-center mx-auto" src={point.icon} layout={"fill"} alt={point.title}/>
 														</div>
-														<h2 className="p-3 text-5xl font-bold text-red-500">{point.num}</h2>
+														<CountUp className="p-3 text-5xl font-bold text-red-500" duration={5} delay={1} end={point.num} suffix={"+"}/>
 														<h2 className="p-2 text-lg font-bold text-gray-700 xl:text-2xl">{point.title}</h2>
 														<p className="p-2 text-sm font-normal text-gray-500">{point.text}</p>
 												</div>

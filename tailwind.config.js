@@ -11,7 +11,7 @@ module.exports = {
 						},
 						backgroundImage: (theme) => ({
 								"hero-pattern": "url(/assets/images/hero-pattern.jpg)",
-								"hero-pattern-two": "url(/assets/images/hero-pattern-2.jpg)",
+								"faq-hero": "url(/assets/images/faq-hero.jpg)",
 								"line-bg": "url(/assets/images/line-bg.png)",
 								"banner-bg": "url(/assets/images/banner-bg.jpg)",
 								"about-hero": "url(/assets/images/about-hero.jpg)",

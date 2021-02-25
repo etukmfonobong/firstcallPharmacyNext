@@ -51,7 +51,7 @@ export default function NavbarSlideIn({}) {
 												className={style.navLink}
 												onClick={(e) => {
 														e.preventDefault()
-														handleClick("/faq")
+														handleClick("/f-a-q")
 												}}
 										>
 												F.A.Q
