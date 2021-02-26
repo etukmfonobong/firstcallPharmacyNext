@@ -7,7 +7,7 @@ export default function Navbar({}) {
 		const {isOpen, toggleSlideInMenu} = useContext(NavContext)
 
 		return (
-				<nav className="flex sticky top-0 z-50 justify-between items-center py-5 px-4 bg-gray-50 shadow font-poppins md:px-10 xl:px-14">
+				<nav className="flex sticky top-0 z-50 justify-between items-center py-3 px-4 bg-gray-50 shadow font-poppins md:px-10 xl:px-14">
 						{/* firstcall logo */}
 						<div>
 								<h2>
